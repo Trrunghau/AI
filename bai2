@@ -8,7 +8,6 @@ TX4 = [1 0 0 l4;0 1 0 0;0 0 1 0;0 0 0 1];
 TZ5 = [1 0 0 0;0 1 0 0;0 0 1 l5;0 0 0 1];
 P = [0;0;0;1];
 disp(simplify(TZ1*RZ1*TX2*TZ3*RZ2*TX4*TZ5*P));
-
 l1 = 30;
 l2 = 40;
 l3 = 10;
@@ -18,7 +17,7 @@ for t1=0:0.1:pi/2
     for t2=0:0.1:pi/2
         Px = l4*cos(t1 + t2) + l2*cos(t1);
         Py = l4*sin(t1 + t2) + l2*sin(t1);
-        Pz = l1 + l3 + l5 +s;
+        Pz = l1 + l3 + l5;
         plot3(Px,Py,Pz,'*');
         hold on
     end
