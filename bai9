@@ -25,7 +25,7 @@ for t1=0:0.1:pi/2
         for t3=0:0.1:pi/2
             Px = 	- l5*sin(t1 + t2) - l4*sin(t1);
             Py =	l5*cos(t1 + t2) + l4*cos(t1);
-            Pz = 	l1 + l2 + l3 - l6 - l7 + s;
+            Pz = 	l1 + l2 + l3 - l6 - l7;
             plot3(Px,Py,Pz,'*');
             hold on 
         end
